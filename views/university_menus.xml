@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="university_root_menu" name="University Management" sequence="1"/>
+
+    <menuitem id="university_students_menu" name="Students" parent="university_root_menu"/>
+    <menuitem id="university_add_students_menu" name="Add And Edit Students" parent="university_students_menu" action="university_add_students_action" sequence="1"/>
+    <menuitem id="university_view_students_menu" name="View Enrolled Students" parent="university_students_menu" action="university_view_students_action" sequence="2"/>
+</odoo>
