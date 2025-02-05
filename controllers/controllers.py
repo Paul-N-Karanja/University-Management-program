@@ -2,21 +2,21 @@
 # from odoo import http
 
 
-# class UniversityManagement(http.Controller):
-#     @http.route('/university_management/university_management', auth='public')
+# class UniversityManagementProgram/(http.Controller):
+#     @http.route('/university_management_program//university_management_program/', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 
-#     @http.route('/university_management/university_management/objects', auth='public')
+#     @http.route('/university_management_program//university_management_program//objects', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('university_management.listing', {
-#             'root': '/university_management/university_management',
-#             'objects': http.request.env['university_management.university_management'].search([]),
+#         return http.request.render('university_management_program/.listing', {
+#             'root': '/university_management_program//university_management_program/',
+#             'objects': http.request.env['university_management_program/.university_management_program/'].search([]),
 #         })
 
-#     @http.route('/university_management/university_management/objects/<model("university_management.university_management"):obj>', auth='public')
+#     @http.route('/university_management_program//university_management_program//objects/<model("university_management_program/.university_management_program/"):obj>', auth='public')
 #     def object(self, obj, **kw):
-#         return http.request.render('university_management.object', {
+#         return http.request.render('university_management_program/.object', {
 #             'object': obj
 #         })
 

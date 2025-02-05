@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class university_management(models.Model):
-#     _name = 'university_management.university_management'
-#     _description = 'university_management.university_management'
+# class university_management_program/(models.Model):
+#     _name = 'university_management_program/.university_management_program/'
+#     _description = 'university_management_program/.university_management_program/'
 
 #     name = fields.Char()
 #     value = fields.Integer()

@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
 <!--
-    <record model="ir.ui.view" id="university_management.list">
-      <field name="name">university_management list</field>
-      <field name="model">university_management.university_management</field>
+    <record model="ir.ui.view" id="university_management_program/.list">
+      <field name="name">University Management program/ list</field>
+      <field name="model">university_management_program/.university_management_program/</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -17,18 +17,18 @@
 
     <!-- actions opening views on models -->
 <!--
-    <record model="ir.actions.act_window" id="university_management.action_window">
-      <field name="name">university_management window</field>
-      <field name="res_model">university_management.university_management</field>
+    <record model="ir.actions.act_window" id="university_management_program/.action_window">
+      <field name="name">University Management program/ window</field>
+      <field name="res_model">university_management_program/.university_management_program/</field>
       <field name="view_mode">tree,form</field>
     </record>
 -->
 
     <!-- server action to the one above -->
 <!--
-    <record model="ir.actions.server" id="university_management.action_server">
-      <field name="name">university_management server</field>
-      <field name="model_id" ref="model_university_management_university_management"/>
+    <record model="ir.actions.server" id="university_management_program/.action_server">
+      <field name="name">University Management program/ server</field>
+      <field name="model_id" ref="model_university_management_program/_university_management_program/"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -42,19 +42,19 @@
 
     <!-- Top menu item -->
 <!--
-    <menuitem name="university_management" id="university_management.menu_root"/>
+    <menuitem name="University Management program/" id="university_management_program/.menu_root"/>
 -->
     <!-- menu categories -->
 <!--
-    <menuitem name="Menu 1" id="university_management.menu_1" parent="university_management.menu_root"/>
-    <menuitem name="Menu 2" id="university_management.menu_2" parent="university_management.menu_root"/>
+    <menuitem name="Menu 1" id="university_management_program/.menu_1" parent="university_management_program/.menu_root"/>
+    <menuitem name="Menu 2" id="university_management_program/.menu_2" parent="university_management_program/.menu_root"/>
 -->
     <!-- actions -->
 <!--
-    <menuitem name="List" id="university_management.menu_1_list" parent="university_management.menu_1"
-              action="university_management.action_window"/>
-    <menuitem name="Server to list" id="university_management" parent="university_management.menu_2"
-              action="university_management.action_server"/>
+    <menuitem name="List" id="university_management_program/.menu_1_list" parent="university_management_program/.menu_1"
+              action="university_management_program/.action_window"/>
+    <menuitem name="Server to list" id="university_management_program/" parent="university_management_program/.menu_2"
+              action="university_management_program/.action_server"/>
 -->
   </data>
 </odoo>

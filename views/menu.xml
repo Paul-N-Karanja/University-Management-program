@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="university_root_menu" name="UMS" sequence="540"/>
+
+    <menuitem id="university_registration_menu" name="University Registration" parent="university_root_menu"/>
+
+    <menuitem id="students_menu" name="Students" parent="university_registration_menu" action="action_university_student"/>
+    <menuitem id="staff_menu" name="Staff" parent="university_registration_menu"/>
+</odoo>
